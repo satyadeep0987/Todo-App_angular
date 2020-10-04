@@ -1,7 +1,16 @@
-<router-outlet>
+<ng-container>
   <app-header></app-header>
-  <div class="container">
-    <app-todos></app-todos>
+
+
+  <div class="container m-3">
+    <div class="row">
+      <div class="col-lg-6">
+        <img src="../assets/todo.png" class="img-fluid" alt="todopng" />
+      </div>
+      <div class="col-lg-6">
+        <app-todos-form></app-todos-form>
+        <app-todos></app-todos>
+      </div>
+    </div>
   </div>
-  
-</router-outlet>
+</ng-container>
